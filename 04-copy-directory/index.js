@@ -15,6 +15,7 @@ const fileCopyPath = path.resolve(__dirname, "./files-copy");
 async function copyDir() {
   try {
     const files = await fs.readdir(filePath);
+
     const filesCopy = await fs.readdir(fileCopyPath);
 
     for (let copy of filesCopy) {
