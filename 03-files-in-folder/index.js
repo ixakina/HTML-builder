@@ -23,9 +23,7 @@ fs.readdir(filePath, options, (err, files) => {
           console.log(
             `${el.name.slice(0, el.name.indexOf('.'))} - ${path
               .extname(el.name)
-              .slice(path.extname(el.name).indexOf('.') + 1)} - ${
-              stats.size / 1000
-            }kb`
+              .slice(path.extname(el.name).indexOf('.') + 1)} - ${stats.size}b`
           );
         }
       }
